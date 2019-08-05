@@ -10,7 +10,9 @@
 header {
     background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,h_1211,w_2159,x_0,y_9/f_auto,q_auto,w_1100/v1554926278/shape/mentalfloss/31841-istock-868507586.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     height: 800px;
+    
 }
 
 .navbar {
@@ -57,6 +59,10 @@ nav > li {
     list-style: none;
 }
 
+.cheese-container {
+    display: none;
+}
+
 #cheese {
     padding: .2rem .5rem;
     border: 1px solid gray;
@@ -92,15 +98,25 @@ li:hover {
 }
 
 @media (max-width: 1000px) {
-    /* .title {
+    .title {
         display: none;
-    } */
-    /* nav {
-        display: none;
-    } */
-    #cheese {
-        display: inherit;
     }
+    nav > li {
+        display: none;
+    }
+    .cheese-container {
+        display: flex;
+        justify-content: flex-end;
+        border: 2px black solid;
+        width: 20%;
+        height: 20px;
+        align-items: center;
+    }
+    #cheese {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
 }
 
 /* @media (min-width: 1000px) {
