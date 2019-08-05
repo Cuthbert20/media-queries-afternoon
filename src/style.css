@@ -1,0 +1,111 @@
+
+/* do this on * before you style everytime. */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+header {
+    background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,h_1211,w_2159,x_0,y_9/f_auto,q_auto,w_1100/v1554926278/shape/mentalfloss/31841-istock-868507586.jpg');
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.navbar {
+    height: 40px;
+    width: 100%;
+    border: 1px dodgerblue solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: flex-start;
+    margin-top: 0;
+}
+.container {
+    height: 200px;
+    width: 100%;
+    border: 1px red solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0;
+    /* position: absolute; */
+}
+
+.title {
+    /* margin-left: 20%; */
+    border: 1px white solid;
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    border: 1px solid red;
+    height: 3rem;
+    /* margin-right: 20%; */
+}
+
+nav > li {
+    /* display: flex;
+    justify-content: flex-end; */
+    margin: 0 1rem;
+    list-style: none;
+}
+
+#cheese {
+    padding: .2rem .5rem;
+    border: 1px solid gray;
+    border-radius: 8px;
+    display: none;
+    margin-right: 1rem;
+}
+
+li:hover {
+    color: #c47e5077;
+    cursor: grabbing;
+}
+
+.title:hover {
+    color: #c47e5077;
+    cursor: grabbing;
+}
+
+.drop-contain {
+    background-color: transparent;
+    border: 1px palevioletred solid;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    width: 100%;
+
+}
+
+.hide {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    /* .title {
+        display: none;
+    } */
+    /* nav {
+        display: none;
+    } */
+    #cheese {
+        display: inherit;
+    }
+}
+
+/* @media (min-width: 1000px) {
+    #cheese {
+        display: none
+    }
+} */
+
